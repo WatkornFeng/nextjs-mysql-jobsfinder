@@ -1,7 +1,7 @@
 import classes from "./JobDetail.module.css";
 
 export default function JobDetail({ itemId, currentItem, setItemId }) {
-  const jobId = currentItem.filter((e) => e.id == itemId);
+  const jobId = currentItem?.filter((e) => e.id == itemId);
 
   return (
     <>
