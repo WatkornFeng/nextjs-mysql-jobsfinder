@@ -5,7 +5,7 @@ export default function JobDetail({ itemId, currentItem, setItemId }) {
 
   return (
     <>
-      {jobId.map((jobs) => (
+      {jobId?.map((jobs) => (
         <div className={classes.main}>
           <div className={classes.btn} onClick={() => setItemId(0)}>
             X
