@@ -10,7 +10,7 @@ export default function Home() {
   const [itemPerPage, setItemPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
-
+  console.log(currentPage);
   useEffect(() => {
     async function getJobs() {
       const response = await axios.get("/api/get-job");
@@ -37,12 +37,17 @@ export default function Home() {
         <title>JobsFinder</title>
         <meta name="title" content="JobsFinder home page" />
       </Head>
-      <Header setSearch={setSearch} jobList={jobList} />
+      <Header
+        setSearch={setSearch}
+        jobList={jobList}
+        setCurrentPage={setCurrentPage}
+      />
       <JobPage
         jobList={jobResult}
         currentItem={currentItem}
         setItemId={setItemId}
         itemId={itemId}
+        setCurrentPage={setCurrentPage}
       />
       <Pagination
         totalPages={totalPages}

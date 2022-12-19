@@ -2,7 +2,7 @@ import classes from "./Header.module.css";
 import Link from "next/link";
 import Fuse from "fuse.js";
 
-export default function Header({ setSearch, jobList }) {
+export default function Header({ setSearch, jobList, setCurrentPage }) {
   let search = "";
   const onSubmitSearch = (event) => {
     event.preventDefault();
@@ -17,6 +17,7 @@ export default function Header({ setSearch, jobList }) {
     // Reset input field in search bar when its got clicked!
     const searchInput = document.getElementById("search_input");
     searchInput.value = "";
+    setCurrentPage(1);
   };
 
   return (
