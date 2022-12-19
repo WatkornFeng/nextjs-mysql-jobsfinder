@@ -1,0 +1,34 @@
+.card {
+  color: black;
+  font-size: 17px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #757a7e;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  padding: 2rem 0.5rem;
+}
+.card h4 {
+  font-size: larger;
+  color: blue;
+  margin: 5px;
+}
+.card h4:hover {
+  color: yellowgreen;
+  text-decoration: underline;
+}
+.card img {
+  width: 35%;
+  height: 120px;
+  margin: 5px;
+}
+.card span {
+  font-weight: 300;
+}
+.card li.hilight {
+  font-weight: 700;
+  margin-bottom: 10px;
+}

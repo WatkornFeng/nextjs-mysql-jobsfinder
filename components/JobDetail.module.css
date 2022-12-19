@@ -1,0 +1,49 @@
+.main {
+  position: sticky;
+  top: -30px;
+  color: black;
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 3rem;
+  padding: 1.5rem 0.5rem;
+  border: solid grey;
+  margin-top: 15px;
+}
+.main img {
+  width: 45%;
+  height: 400px;
+  margin-top: -15px;
+}
+.main h2 {
+  margin-top: 20px;
+}
+.main h3 {
+  text-align: left;
+}
+
+.main p {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.main #detail,
+#hilight,
+#salary {
+  text-align: left;
+  font-size: 25px;
+}
+.btn {
+  width: 70px;
+  margin-left: 90%;
+  background-color: whote;
+  font-weight: 700;
+  color: grey;
+  padding: 1%;
+  border: solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(110, 106, 106);
+  color: rgb(247, 244, 244);
+}

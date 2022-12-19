@@ -1,0 +1,80 @@
+.panel {
+  box-shadow: 10px 1px 15px #71797e;
+}
+/* Logo */
+.logo {
+  display: flex;
+  margin-left: 30%;
+  width: 45%;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 35px;
+  margin-top: 25px;
+  font-family: "Ubuntu", sans-serif;
+  color: #050a30;
+  text-shadow: 10px 15px 15px #71797e;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 2s;
+  margin-bottom: 15px;
+  outline: 0;
+}
+
+.logo:visited {
+  color: #050a30;
+}
+.logo:hover {
+  color: #daa520;
+}
+/* Top Panel */
+.top {
+  display: flex;
+  justify-content: start;
+
+  margin-top: 10px;
+}
+.top button {
+  background-color: rgb(247, 142, 5);
+  border: solid 1px rgb(247, 142, 5);
+  border-radius: 5px;
+  color: white;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.top button:hover {
+  color: rgb(247, 142, 5);
+  background-color: white;
+}
+.top input {
+  margin-top: 15px;
+  height: 45px;
+  width: 450px;
+  font-size: 15px;
+  border: 2px solid #899499;
+  border-radius: 5px;
+}
+
+/* button login */
+.buttonlogin button {
+  margin-top: 25px;
+  margin-left: 20%;
+  font-size: 25px;
+  color: #ffffff;
+  background: #000c66;
+  border: 1px solid #000c66;
+  border-radius: 6px;
+  line-height: 16px;
+  min-height: 35px;
+  outline: 0;
+  padding: 15px 25px;
+}
+
+.buttonlogin button:hover {
+  background-color: initial;
+  color: #050a30;
+}

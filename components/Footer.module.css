@@ -1,0 +1,8 @@
+.footer {
+  margin-left: 10%;
+  position: sticky;
+  bottom: 0;
+  font-weight: 500;
+  color: grey;
+  opacity: 0.3;
+}
