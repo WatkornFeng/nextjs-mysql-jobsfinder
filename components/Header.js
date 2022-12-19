@@ -6,6 +6,7 @@ export default function Header({ setSearch, jobList, setCurrentPage }) {
   let search = "";
   const onSubmitSearch = (event) => {
     event.preventDefault();
+    // Change search to be object for using in Fuse
     const searchResult = { search };
     const fuse = new Fuse(jobList, { keys: ["position", "company"] });
     const results = searchResult.search
@@ -36,7 +37,7 @@ export default function Header({ setSearch, jobList, setCurrentPage }) {
                 type="text"
                 placeholder="  Search job by position or company's name here . . ."
                 onChange={(e) => {
-                  return (search = e.target.value);
+                  search = e.target.value;
                 }}
               />
               <button type="submit">Job Search</button>

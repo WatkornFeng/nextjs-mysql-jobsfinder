@@ -28,7 +28,8 @@ export default function NewJobForm(props) {
       detail.length > 0 &&
       detail.length <= 500 &&
       hilight.length > 0 &&
-      isUrl(img) == true
+      isUrl(img) == true &&
+      img.includes(".jpg")
     ) {
       setFormValid(true);
     } else {
@@ -114,7 +115,10 @@ export default function NewJobForm(props) {
             required
             onChange={(e) => setImg(e.target.value)}
           />
-          <span>required* Please input as a link or URL !</span>
+          <span>
+            required* Please input as a link or URL ! e.g.
+            https://pictureABC.jpg
+          </span>
         </div>
         <div className={classes.control}>
           <label>Job Description :</label>

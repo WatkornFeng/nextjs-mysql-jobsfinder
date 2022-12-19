@@ -10,7 +10,7 @@ export default function Home() {
   const [itemPerPage, setItemPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
-  console.log(currentPage);
+
   useEffect(() => {
     async function getJobs() {
       const response = await axios.get("/api/get-job");
@@ -53,6 +53,7 @@ export default function Home() {
         totalPages={totalPages}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
+        setItemId={setItemId}
       />
     </>
   );

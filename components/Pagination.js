@@ -1,9 +1,12 @@
-const Pagination = ({ totalPages, setCurrentPage, currentPage }) => {
+const Pagination = ({ totalPages, setCurrentPage, currentPage, setItemId }) => {
   let pages = [];
-
   for (let i = 1; i <= totalPages; i++) {
     pages.push(i);
   }
+  const paginationOnclick = (page) => {
+    setCurrentPage(page);
+    setItemId(0);
+  };
 
   return (
     <>
@@ -12,7 +15,9 @@ const Pagination = ({ totalPages, setCurrentPage, currentPage }) => {
           return (
             <button
               key={index}
-              onClick={() => setCurrentPage(page)}
+              onClick={() => {
+                paginationOnclick(page);
+              }}
               className={page === currentPage ? "active" : ""}
             >
               {page}
