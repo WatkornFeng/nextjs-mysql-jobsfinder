@@ -29,7 +29,7 @@ export default function NewJobForm(props) {
       detail.length <= 500 &&
       hilight.length > 0 &&
       isUrl(img) == true &&
-      img.includes(".jpg")
+      (img.includes(".jpg") || img.includes(".png"))
     ) {
       setFormValid(true);
     } else {
