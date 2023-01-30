@@ -19,9 +19,9 @@ export default function Home() {
     }
     getJobs();
   }, []);
+  // useMemo useCallback*****
   // Search Jobs//
-  const jobResult = search ? search : jobList;
-
+  const jobResult = search ? search : jobList; // if search not found return all job      ||
   // Calculation total pages for do Pagination
   const allItem = jobResult.length;
   const totalPages = Math.ceil(allItem / itemPerPage);
@@ -30,6 +30,7 @@ export default function Home() {
   const lastItemIndex = currentPage * itemPerPage; // 1*5 => 5
   const firstItemIndex = lastItemIndex - itemPerPage; //5-5=> 0
   const currentItem = jobResult.slice(firstItemIndex, lastItemIndex); // slice(0,5) => [0,1,2,3,4]
+  // useMemo useCallback*****
 
   return (
     <>
