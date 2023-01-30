@@ -1,6 +1,6 @@
-import JobDetail from "../components/JobDetail";
-import Jobscard from "../components/Jobscard";
-import Job404Page from "../components/Job404page";
+import JobDetail from "./JobDetail";
+import Jobscard from "./Jobscard";
+import Job404Page from "./Job404page";
 
 const JobPage = ({ jobList, currentItem, setItemId, itemId }) => {
   return (

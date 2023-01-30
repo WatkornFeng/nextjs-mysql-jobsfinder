@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Pagination from "../components/Pagination";
-import JobPage from "./jobpage";
+import JobPage from "../components/jobpage";
 import Header from "../components/Header";
 import Head from "next/head";
 export default function Home() {
